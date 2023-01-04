@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e8c0c39f-286f-4beb-b639-0586136cd682}</ProjectGuid>
+    <RootNamespace>AtakaEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Jan Rejas II\Desktop\AtakaEngine\SFML-2.5.1\include;C:\Users\Jan Rejas II\Desktop\AtakaEngine\dragonfly\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Jan Rejas II\Desktop\AtakaEngine\SFML-2.5.1\lib;C:\Users\Jan Rejas II\Desktop\AtakaEngine\dragonfly\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\dragonfly\game.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\dragonfly\include\Animation.h" />
+    <ClInclude Include="..\..\dragonfly\include\Box.h" />
+    <ClInclude Include="..\..\dragonfly\include\Button.h" />
+    <ClInclude Include="..\..\dragonfly\include\Circle.h" />
+    <ClInclude Include="..\..\dragonfly\include\Clock.h" />
+    <ClInclude Include="..\..\dragonfly\include\Color.h" />
+    <ClInclude Include="..\..\dragonfly\include\Config.h" />
+    <ClInclude Include="..\..\dragonfly\include\DisplayManager.h" />
+    <ClInclude Include="..\..\dragonfly\include\Event.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventCollision.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventCustomNetwork.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventKeyboard.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventKeyboardNetwork.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventMouse.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventMouseNetwork.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventNetwork.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventOut.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventPath.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventStep.h" />
+    <ClInclude Include="..\..\dragonfly\include\EventView.h" />
+    <ClInclude Include="..\..\dragonfly\include\Firework.h" />
+    <ClInclude Include="..\..\dragonfly\include\Frame.h" />
+    <ClInclude Include="..\..\dragonfly\include\Fraps.h" />
+    <ClInclude Include="..\..\dragonfly\include\GameManager.h" />
+    <ClInclude Include="..\..\dragonfly\include\Grid.h" />
+    <ClInclude Include="..\..\dragonfly\include\InputManager.h" />
+    <ClInclude Include="..\..\dragonfly\include\Line.h" />
+    <ClInclude Include="..\..\dragonfly\include\LogManager.h" />
+    <ClInclude Include="..\..\dragonfly\include\Manager.h" />
+    <ClInclude Include="..\..\dragonfly\include\Music.h" />
+    <ClInclude Include="..\..\dragonfly\include\NetworkManager.h" />
+    <ClInclude Include="..\..\dragonfly\include\NetworkNode.h" />
+    <ClInclude Include="..\..\dragonfly\include\Object.h" />
+    <ClInclude Include="..\..\dragonfly\include\ObjectList.h" />
+    <ClInclude Include="..\..\dragonfly\include\ObjectListIterator.h" />
+    <ClInclude Include="..\..\dragonfly\include\Particle.h" />
+    <ClInclude Include="..\..\dragonfly\include\Path.h" />
+    <ClInclude Include="..\..\dragonfly\include\PathFind.h" />
+    <ClInclude Include="..\..\dragonfly\include\PathManager.h" />
+    <ClInclude Include="..\..\dragonfly\include\Pause.h" />
+    <ClInclude Include="..\..\dragonfly\include\Precipitation.h" />
+    <ClInclude Include="..\..\dragonfly\include\QuadtreeNode.h" />
+    <ClInclude Include="..\..\dragonfly\include\ResourceManager.h" />
+    <ClInclude Include="..\..\dragonfly\include\SceneGraph.h" />
+    <ClInclude Include="..\..\dragonfly\include\Shape.h" />
+    <ClInclude Include="..\..\dragonfly\include\Sound.h" />
+    <ClInclude Include="..\..\dragonfly\include\Splash.h" />
+    <ClInclude Include="..\..\dragonfly\include\SplashDragonfly.h" />
+    <ClInclude Include="..\..\dragonfly\include\Sprite.h" />
+    <ClInclude Include="..\..\dragonfly\include\State.h" />
+    <ClInclude Include="..\..\dragonfly\include\StateMachine.h" />
+    <ClInclude Include="..\..\dragonfly\include\TextEntry.h" />
+    <ClInclude Include="..\..\dragonfly\include\utility.h" />
+    <ClInclude Include="..\..\dragonfly\include\Vector.h" />
+    <ClInclude Include="..\..\dragonfly\include\ViewObject.h" />
+    <ClInclude Include="..\..\dragonfly\include\WorldManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\dragonfly\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\dragonfly\changelog.txt" />
+    <Text Include="..\..\dragonfly\df-config.txt" />
+    <Text Include="..\..\dragonfly\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\dragonfly\df-font.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

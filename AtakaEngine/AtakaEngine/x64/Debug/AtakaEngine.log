@@ -1,0 +1,5 @@
+﻿game.obj : error LNK2019: unresolved external symbol "public: static class df::GameManager & __cdecl df::GameManager::getInstance(void)" (?getInstance@GameManager@df@@SAAEAV12@XZ) referenced in function main
+game.obj : error LNK2019: unresolved external symbol "int __cdecl df::splash(void)" (?splash@df@@YAHXZ) referenced in function main
+game.obj : error LNK2019: unresolved external symbol "public: static class df::LogManager & __cdecl df::LogManager::getInstance(void)" (?getInstance@LogManager@df@@SAAEAV12@XZ) referenced in function main
+game.obj : error LNK2019: unresolved external symbol "public: int __cdecl df::LogManager::writeLog(char const *,...)const " (?writeLog@LogManager@df@@QEBAHPEBDZZ) referenced in function main
+C:\Users\Jan Rejas II\Desktop\AtakaEngine\AtakaEngine\x64\Debug\AtakaEngine.exe : fatal error LNK1120: 4 unresolved externals
